@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="/dist/output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+  <script src="./dist/index.js" defer></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-lightgrey font-poppins px-4">
+  <div class="flex justify-center items-center min-h-screen">
+    <div class="bg-white w-full md:max-w-md p-4 rounded-xl rounded-br-[8rem]">
+      <div class="border-b border-b-lightgrey py-3 sm:pb-6 pb-12">
+        <form id="form" class="flex sm:justify-start justify-between relative gap-2">
+          <div class="sm:w-1/4 w-full input-control">
+            <label for="day" class="text-[.5rem] text-smokeygrey font-bold tracking-widest">DAY</label>
+            <input type="number" name="day" id="day" placeholder="DD" class="w-full p-2 border border-lightgrey rounded-md font-[600] tracking-wide">
+            <p class="error-message  text-red-500 text-[.5rem] italic"></p>
+          </div>
+          <div class="sm:w-1/4 w-full input-control">
+            <label for="day" class="text-[.5rem] text-smokeygrey font-bold tracking-widest">MONTH</label>
+            <input type="number" name="month" id="month" placeholder="MM" class="w-full p-2 border border-lightgrey rounded-md font-[800] tracking-wide">
+            <p class="error-message  text-red-500 text-[.5rem] italic"></p>
+          </div>
+          <div class="sm:w-1/4 w-full input-control">
+            <label for="day" class="text-[.5rem] text-smokeygrey font-bold tracking-widest">YEAR</label>
+            <input type="number" name="year" id="year" placeholder="YYYY" class="w-full p-2 border border-lightgrey rounded-md font-[800] tracking-wide">
+            <p class="error-message text-red-500 text-[.5rem] italic"></p>
+          </div>
+          <button id="btn" type="submit" class="absolute sm:bottom-0 -bottom-6 right-[50%] sm:right-0 bg-purple hover:bg-black hover:cursor-pointer p-3 rounded-full transform translate-y-14 sm:-translate-x-0 translate-x-[50%]"><img src="./assets/images/icon-arrow.svg" alt="icon-arrow" class="w"></button>
+        </form>
+      </div>
+      <div class="flex flex-col -space-y-2 sm:-space-y-7 sm:p-0 py-8 sm:pt-0 pt-12">
+        <p class="text-[2.5rem] sm:text-[3.7rem] font-[1000] italic"><span id="year-result" class="text-purple">- -</span> years</p>
+        <p class="text-[2.5rem] sm:text-[3.7rem] font-[1000] italic"><span id="month-result" class="text-purple">- -</span> months</p>
+        <p class="text-[2.5rem] sm:text-[3.7rem] font-[1000] italic"><span id="day-result" class="text-purple">- -</span> days</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Johnny</a>.
+  </div>
+</body>
+</html>
